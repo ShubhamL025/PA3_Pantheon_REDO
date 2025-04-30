@@ -1,0 +1,47 @@
+50 Mbps / 10 ms RTT (Low Latency)
+
+# BBR
+python2 src/experiments/test.py local \
+  --schemes "bbr" \
+  --uplink-trace traces/50mbps_10ms.trace \
+  --downlink-trace traces/50mbps_10ms.trace \
+  --data-dir results/50mbps_10ms/bbr
+
+# Vegas
+python2 src/experiments/test.py local \
+  --schemes "vegas" \
+  --uplink-trace traces/50mbps_10ms.trace \
+  --downlink-trace traces/50mbps_10ms.trace \
+  --data-dir results/50mbps_10ms/vegas
+
+# Sprout
+python2 src/experiments/test.py local \
+  --schemes "sprout" \
+  --uplink-trace traces/50mbps_10ms.trace \
+  --downlink-trace traces/50mbps_10ms.trace \
+  --data-dir results/50mbps_10ms/sprout
+
+
+1 Mbps / 200 ms RTT (High Latency)
+
+# BBR
+python2 src/experiments/test.py local \
+  --schemes "bbr" \
+  --uplink-trace traces/1mbps_200ms.trace \
+  --downlink-trace traces/1mbps_200ms.trace \
+  --data-dir results/1mbps_200ms/bbr
+
+# Vegas
+python2 src/experiments/test.py local \
+  --schemes "vegas" \
+  --uplink-trace traces/1mbps_200ms.trace \
+  --downlink-trace traces/1mbps_200ms.trace \
+  --data-dir results/1mbps_200ms/vegas
+
+# Sprout
+python2 src/experiments/test.py local \
+  --schemes "sprout" \
+  --uplink-trace traces/1mbps_200ms.trace \
+  --downlink-trace traces/1mbps_200ms.trace \
+  --data-dir results/1mbps_200ms/sprout
+
