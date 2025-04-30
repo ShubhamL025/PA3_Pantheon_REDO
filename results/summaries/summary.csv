@@ -1,0 +1,7 @@
+Scenario,Protocol,Avg Throughput (Kbps),Avg RTT (ms),Loss Rate (approx)
+50mbps_10ms,vegas,821.13,978.89,0.179
+50mbps_10ms,bbr,828.0,969.14,0.172
+50mbps_10ms,sprout,828.0,969.14,0.172
+1mbps_200ms,vegas,1496.88,796.19,-0.497
+1mbps_200ms,bbr,1493.84,1313.88,-0.494
+1mbps_200ms,sprout,1490.38,1490.38,-0.49
